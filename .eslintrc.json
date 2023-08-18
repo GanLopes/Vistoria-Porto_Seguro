@@ -1,0 +1,16 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "jsx-quotes": [
+      2,
+      "prefer-double"
+    ],
+    "indent": [
+      "error",
+      4
+    ],
+    "eol-last": [
+      "error"
+    ]
+  }
+}

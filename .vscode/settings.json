@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave": {
+        "editor.formatOnSave": true
+    },
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay",
+}
