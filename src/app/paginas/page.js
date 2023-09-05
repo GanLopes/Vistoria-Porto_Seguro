@@ -1,7 +1,7 @@
 import Link from "next/link";
-import CaixaMensagem from "./Componentes/CaixaMensagem/page";
-import Headers from "./Componentes/Header/page";
-import InputTexto from "./Componentes/InputTexto/page";
+import CaixaMensagem from "../Componentes/CaixaMensagem/page";
+import Headers from "../Componentes/Header/page";
+import InputTexto from "../Componentes/InputTexto/page";
 
 export default function Home() {
     return (
