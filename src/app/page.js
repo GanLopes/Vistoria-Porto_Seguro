@@ -15,6 +15,7 @@ export default function Home() {
                 <CaixaMensagem envio="bot" mensagem={"Tudo Bem, antes de começarmos você possue alguma duvida"}/>
                 <CaixaMensagem envio="user" mensagem={"Não"}/>
                 <CaixaMensagem envio="bot" mensagem={"Tudo Bem, vamos começar"}/>
+                <CaixaMensagem envio="user" mensagem={"Sim"}/>
             </main>
             <InputTexto/>
         </div>
