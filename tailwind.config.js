@@ -2,8 +2,9 @@
 module.exports = {
     content: [
         './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-        './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/componentes/**/*.{js,ts,jsx,tsx,mdx}',
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/envioFotos/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
         extend: {
