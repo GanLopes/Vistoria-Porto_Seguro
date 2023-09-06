@@ -1,6 +1,6 @@
-import Botao from "@/app/Componentes/Botao/page"
-import CampoInserirImg from "@/app/Componentes/CampoInserirImg/page"
-import Headers from "@/app/Componentes/Header/page"
+import Botao from "@/Componentes/Botao/page"
+import CampoInserirImg from "@/Componentes/CampoInserirImg/page"
+import Headers from "@/Componentes/Header/page"
 import Link from "next/link"
 
 
