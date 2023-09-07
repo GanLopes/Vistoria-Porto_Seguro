@@ -1,4 +1,3 @@
-import About  from '@/About'
 import Link from 'next/link'
 import {BiSolidSend} from 'react-icons/bi'
 
