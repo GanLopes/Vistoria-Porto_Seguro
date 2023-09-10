@@ -5,6 +5,7 @@ module.exports = {
         './src/componentes/**/*.{js,ts,jsx,tsx,mdx}',
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
         './src/envioFotos/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/equipe/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
         extend: {
