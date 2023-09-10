@@ -2,10 +2,10 @@
 module.exports = {
     content: [
         './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-        './src/componentes/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/Componentes/**/*.{js,ts,jsx,tsx,mdx}',
         './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-        './src/envioFotos/**/*.{js,ts,jsx,tsx,mdx}',
-        './src/equipe/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/app/chatbot/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/app/equipe/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
         extend: {

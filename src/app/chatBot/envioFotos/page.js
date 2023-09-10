@@ -1,5 +1,6 @@
 import Botao from '@/Componentes/Botao';
 import CampoInserirImg from '@/Componentes/CampoInserirImg';
+import Header from '@/Componentes/Header';
 import Link from 'next/link';
 
 const titulosCampos = ['FRENTE', 'LADO ESQUERDO', 'LADO DIREITO', 'ATRÁS'];
@@ -7,6 +8,7 @@ const titulosCampos = ['FRENTE', 'LADO ESQUERDO', 'LADO DIREITO', 'ATRÁS'];
 export default function EnvioFotos() {
     return (
         <>
+            <Header/>
             <h1 className="text-center text-3xl mt-10 font-semibold ">
                 Fotografe a sua Bike
             </h1>

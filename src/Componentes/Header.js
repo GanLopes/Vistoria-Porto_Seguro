@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BotaoHeader from './BotaoHeader';
 
-export default function Header() {
+export default function Header({texto = "Equipe"}) {
     return (
         <header className="w-full flex justify-between border-b-2 items-center pr-4">
             <Link href="/">
@@ -14,7 +14,7 @@ export default function Header() {
                     height={0}
                 />
             </Link>
-            <BotaoHeader />
+            <BotaoHeader texto={texto} />
         </header>
     );
 }

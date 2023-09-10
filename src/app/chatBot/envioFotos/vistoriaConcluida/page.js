@@ -1,9 +1,11 @@
 import Botao from '@/Componentes/Botao';
+import Header from '@/Componentes/Header';
 import Link from 'next/link';
 
 export default function Home() {
     return (
         <>
+            <Header/>
             <main className="flex flex-col items-center space-y-16 min-h-[90vh] justify-center">
                 <h1 className="font-bold text-4xl text-center">
                     Vistoria <br /> Concluida!

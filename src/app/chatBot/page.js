@@ -1,9 +1,11 @@
+import Header from '@/Componentes/Header';
 import CaixaMensagem from '../../Componentes/CaixaMensagem';
 import InputTexto from '../../Componentes/InputTexto';
 
 export default function chatBot() {
     return (
         <div>
+            <Header/>
             <main className="mb-20 max-w-2xl mt-10 mx-auto">
                 <CaixaMensagem
                     envio="bot"
