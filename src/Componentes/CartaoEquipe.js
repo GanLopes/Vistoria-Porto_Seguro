@@ -21,7 +21,7 @@ function CartaoEquipe({ cargo, nome, github, rm }) {
                     {nome}
                 </span>
                 <span className="font-semibold flex items-center justify-between text-md">
-                    {`rm: ${rm}`}
+                    {`RM: ${rm}`}
                 </span>
                 <p className="text-lg">{cargo}</p>
             </div>
