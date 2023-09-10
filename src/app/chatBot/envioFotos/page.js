@@ -18,7 +18,7 @@ export default function EnvioFotos() {
                 ))}
             </main>
             <div className="flex justify-center">
-                <Link href={'/chatBot/envioFotos/vistoriaConcluida'}>
+                <Link href={'/chatBot/envioFotos/vistoriaConcluida'} className="mt-10">
                     <Botao texto={'Avançar'} />
                 </Link>
             </div>

@@ -8,8 +8,8 @@ export default function Home() {
         <>
             <Header/>
             <main className="flex flex-col items-center space-y-16 min-h-[80vh] justify-center">
-                <h1 className="font-bold text-4xl">Bem-Vindo</h1>
-                <p className="max-w-[200px] font-semibold text-center">
+                <h1 className="font-bold text-5xl">Bem-Vindo</h1>
+                <p className="max-w-[200px] text-xl font-semibold text-center">
                     Clique em avançar para darmos inicio ao processo de vistoria
                 </p>
                 <Link href="/chatBot">

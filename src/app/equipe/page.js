@@ -7,22 +7,27 @@ const listaEquipe = [
     {
         nome: 'Amorgan',
         github: 'GanLopes',
-    },
-    {
-        nome: 'Roberto',
-        github: 'RobertSDM',
+        rm: "98552" 
     },
     {
         nome: 'Gustavo',
         github: 'GuGodoi7',
+        rm: "99585"
+    },
+    {
+        nome: 'Roberto',
+        github: 'RobertSDM',
+        rm:"552520"
     },
     {
         nome: 'Melissa',
         github: 'melissaoli07',
+        rm:"98698"
     },
     {
         nome: 'Vinicius ',
         github: 'VniciNN',
+        rm: "99069"
     },
 ];
 
@@ -44,10 +49,11 @@ function equipe() {
                             cargo={membro.cargo}
                             github={membro.github}
                             nome={membro.nome}
+                            rm={membro.rm}
                         />
                     ))}
                 </main>
-                <Link href={"https://github.com/RobertSDM/Web-Challenge-Porto"} className="h-fit border-2 mt-20">
+                <Link href={"https://github.com/RobertSDM/Web-Challenge-Porto"} className="h-fit my-20">
                     <Botao texto={"Repositório da Solução"}/>
                 </Link>
             </div>
