@@ -17,7 +17,7 @@ export default function chatBot() {
                 <CaixaMensagem
                     envio="bot"
                     mensagem={
-                        'Tudo Bem, antes de começarmos você possue alguma duvida'
+                        'Tudo Bem, antes de começarmos gostaria de saber se possui alguma duvida'
                     }
                 />
                 <CaixaMensagem envio="user" mensagem={'Não'} />
