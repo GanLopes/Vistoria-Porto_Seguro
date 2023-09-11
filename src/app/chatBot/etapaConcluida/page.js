@@ -11,13 +11,11 @@ export default function Home() {
                 <h1 className="font-bold text-5xl text-center">
                     Etapa <br /> Concluida!
                 </h1>
-                <p className="max-w-[200px] text-xl font-semibold text-center">
-                </p>
+                <Check/>
                 <Link href="/chatBot/envioFotos">
                     <Botao texto="Avançar" />
                 </Link>
             </main>
-            <Check/>
         </div>
     );
 }
