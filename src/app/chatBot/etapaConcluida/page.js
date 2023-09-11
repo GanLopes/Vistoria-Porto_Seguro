@@ -13,7 +13,7 @@ export default function Home() {
                 <p className="max-w-[200px] text-xl font-semibold text-center">
                     Parabéns, você foi aprovado no processo de vistoria!
                 </p>
-                <Link href="/envioFotos">
+                <Link href="/chatBot/envioFotos">
                     <Botao texto="Avançar" />
                 </Link>
             </main>
