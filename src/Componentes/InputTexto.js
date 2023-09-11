@@ -7,7 +7,7 @@ export default function InputTexto(){
             <div className='flex max-w-2xl gap-4 justify-center mx-auto items-center'>
                 <input className="flex-1 bg-transparent outline-none pb-1 placeholder:text-lg placeholder:text-black border-black border-b-2" 
                     type="text" placeholder="Digite aqui" />
-                <Link href='/chatBot/envioFotos'>
+                <Link href='/chatBot/etapaConcluida'>
                     <BiSolidSend className="w-6 h-6"/>
                 </Link>
             </div>
