@@ -10,22 +10,35 @@ export default function chatBot() {
                 <CaixaMensagem
                     envio="bot"
                     mensagem={
-                        'Olá, sou o ChatBot e vou ajudar você com a vistoria. Podemos começar?'
+                        'Vamos iniciar com algumas perguntas sobre a sua bicicleta'
                     }
                 />
-                <CaixaMensagem envio="user" mensagem={'Sim'} />
+                <CaixaMensagem envio="user" mensagem={'Ok'} /> 
+                <CaixaMensagem envio="user" mensagem={'Cancelar'} />
                 <CaixaMensagem
                     envio="bot"
                     mensagem={
-                        'Tudo Bem, antes de começarmos gostaria de saber se possui alguma duvida'
+                        'Qual o Modelo da sua bike?'
                     }
                 />
-                <CaixaMensagem envio="user" mensagem={'Não'} />
+                <CaixaMensagem envio="user" mensagem={'Pinarello'} />
+                <CaixaMensagem envio="user" mensagem={'BMC'} />
+                <CaixaMensagem envio="user" mensagem={'Caloi'} />
+                <CaixaMensagem envio="user" mensagem={'Outra'} />
                 <CaixaMensagem
                     envio="bot"
-                    mensagem={'Tudo Bem, vamos começar'}
+                    mensagem={'Qual o número de serie da bicicleta '}
                 />
-                <CaixaMensagem envio="user" mensagem={'Sim'} />
+                <CaixaMensagem envio="user" mensagem={'AB12345673'} />
+
+                <CaixaMensagem
+                    envio="bot"
+                    mensagem={
+                        'Qual o valor da bike?'
+                    }
+                />
+                <CaixaMensagem envio="user" mensagem={'5000'} />
+
             </main>
             <InputTexto />
         </div>
