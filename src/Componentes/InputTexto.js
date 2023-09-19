@@ -5,9 +5,10 @@ import { RiSendPlaneFill } from 'react-icons/ri';
 import { mensagens } from '@/exports';
 
 function controlaMensagem(mensagem, setMensagem, setIdMensagem) {
-    if (Number(mensagem) < 5 && Number(mensagem) > 10) {
+    if (mensagem.length < 5 || mensagem.length > 10) {
         return;
     }
+
     mensagens.push(
         {
             mensagem: mensagem,
@@ -28,7 +29,7 @@ const InputTexto = ({ setIdMensagem }) => {
     return (
         <div className="py-2 px-4 flex gap-4 items-center w-full">
             <input
-                type="text"
+                type="number"
                 placeholder="Digite aqui"
                 value={mensagem}
                 className="border-b-2 w-full bg-transparent border-zinc-400 outline-none"

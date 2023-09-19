@@ -2,8 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import BotaoHeader from '@/componentes/BotaoHeader';
-import { useContext, useEffect, useState } from 'react';
 
 export default function Header() {
     return (

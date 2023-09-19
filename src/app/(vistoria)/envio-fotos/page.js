@@ -3,10 +3,9 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-import Botao from '@/componentes/Botao';
+import { titulosCampos } from '@/exports';
 import CampoInserirImg from '@/componentes/CampoInserirImg';
 import Footer from '@/componentes/Footer';
-import { titulosCampos } from '@/exports';
 
 export default function EnvioFotos() {
     const [desabled, setDesabled] = useState(true);
