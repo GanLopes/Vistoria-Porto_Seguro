@@ -27,7 +27,7 @@ export default function EnvioFotos() {
                     />
                 ))}
             </div>
-            <Footer href="/vistoria-concluida" desabled={desabled} />
+            <Footer href={["envio-fotos" ,"/vistoria-concluida"]} desabled={desabled} />
         </div>
     );
 }
