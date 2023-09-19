@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-import CampoInserirImg from '/src/componentes/CampoInserirImg';
-import Footer from '/src/componentes/Footer';
+import CampoInserirImg from '/src/componentes/CampoInserirImg.js';
+import Footer from '/src/componentes/Footer.js';
 import { titulosCampos } from '/src/exports';
 
 export default function EnvioFotos() {

@@ -31,11 +31,11 @@ export const titulosCampos = [
     },
     {
         titulo: 'Lado Esquerdo',
-        img: '/imgs/bikes/lado.jpg',
+        img: '/imgs/bikes/lado-esquerdo.jpg',
     },
     {
         titulo: 'Lado Direito',
-        img: '/imgs/bikes/lado.jpg',
+        img: '/imgs/bikes/lado-direito.jpg',
     },
     {
         titulo: 'Atrás',
