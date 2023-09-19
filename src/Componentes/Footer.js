@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import InputTexto from './InputTexto';
 
-export default function Footer({ desabilitado, href, digitar, setIdMensagem }) {
+export default function Footer({ desabilitado, href, digitar=false, setIdMensagem=0}) {
     return (
         <footer className="flex items-center h-16 w-full bg-[#f5f5f5] fixed bottom-0">
             <div className="px-4 w-full max-w-2xl flex gap-4 mx-auto items-center justify-end">

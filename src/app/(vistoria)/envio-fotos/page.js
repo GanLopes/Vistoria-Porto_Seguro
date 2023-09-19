@@ -3,9 +3,9 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-import { titulosCampos } from '@/exports';
-import CampoInserirImg from '@/componentes/CampoInserirImg';
-import Footer from '@/componentes/Footer';
+import CampoInserirImg from '/src/componentes/CampoInserirImg';
+import Footer from '/src/componentes/Footer';
+import { titulosCampos } from '/src/exports';
 
 export default function EnvioFotos() {
     const [desabled, setDesabled] = useState(true);
@@ -16,7 +16,7 @@ export default function EnvioFotos() {
                 Envio de Fotos
             </h1>
             <div
-                className="flex flex-wrap mx-auto items-center 
+                className="mb-20 flex flex-wrap mx-auto items-center 
             flex-col md:flex-row justify-center gap-10"
             >
                 {titulosCampos.map(elemento => (
@@ -26,14 +26,6 @@ export default function EnvioFotos() {
                         titulo={elemento.titulo}
                     />
                 ))}
-            </div>
-            <div className="flex justify-center">
-                <Link
-                    href={'/chatBot/envioFotos/vistoriaConcluida'}
-                    className="mt-10"
-                >
-                    <Botao texto={'Avançar'} />
-                </Link>
             </div>
             <Footer href="/vistoria-concluida" desabled={desabled} />
         </div>

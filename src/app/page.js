@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Botao from '@/componentes/Botao';
+import Botao from '/src/componentes/Botao';
 
 export default function Home() {
     return (

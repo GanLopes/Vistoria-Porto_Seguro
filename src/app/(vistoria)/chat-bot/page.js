@@ -1,8 +1,8 @@
 'use client';
 
-import Footer from '@/componentes/Footer';
-import Mensagem from '@/componentes/Mensagem';
-import { mensagens } from '@/exports';
+import Footer from '/src/componentes/Footer';
+import Mensagem from '/src/componentes/Mensagem';
+import { mensagens } from '/src/exports';
 import { useEffect, useState } from 'react';
 
 export default function chatBot() {
