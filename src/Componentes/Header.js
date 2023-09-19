@@ -1,11 +1,14 @@
+"use client"
+
 import Image from 'next/image';
 import Link from 'next/link';
-import BotaoHeader from './BotaoHeader';
+import BotaoHeader from '@/componentes/BotaoHeader';
+import { useContext, useEffect, useState } from 'react';
 
-export default function Header({texto = "Equipe"}) {
+export default function Header() {
     return (
-        <header className="w-full flex justify-between border-b-2 items-center pr-4">
-            <Link href="/">
+        <header className="w-full flex justify-center rounded-b-3xl bg-white shadow-lg shadow-black/10 items-center pr-4">
+            <Link href={"/"}>
                 <Image
                     className="aspect-auto"
                     src="/imgs/logo-porto.webp"
@@ -14,7 +17,6 @@ export default function Header({texto = "Equipe"}) {
                     height={0}
                 />
             </Link>
-            <BotaoHeader texto={texto} />
         </header>
     );
 }

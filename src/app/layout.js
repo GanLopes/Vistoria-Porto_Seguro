@@ -1,17 +1,21 @@
-import Header from '@/Componentes/Header'
-import './globals.css'
+import '@/app/globals.css';
+import Header from '@/componentes/Header';
+import {Roboto} from "next/font/google"
+
+const fonte = Roboto({subsets:["latin"], weight:["400", "500", "700", "900"]})
 
 export const metadata = {
     title: 'Web Challenge Porto',
-    description: 'Parte web da solução para a Porto Seguro',
-}
+    description: 'Faça a sua vistoria com quem garante a segurança',
+};
 
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-Br">
-            <body>
+            <body className={fonte.className}>
+                <Header/>
                 {children}
             </body>
         </html>
-    )
+    );
 }
