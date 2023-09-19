@@ -9,7 +9,7 @@ export default function InputTexto({ desabled }) {
                     Avançar para próxima etapa
                 </label>
                 <Link
-                    href={`${desabled ? "/chat-bot" : "/envio-fotos"}`}
+                    href={`${desabled ? '/chat-bot' : '/envio-fotos'}`}
                     className={`bg-blue-600 p-2 rounded-lg ${
                         desabled && 'bg-zinc-200'
                     }`}

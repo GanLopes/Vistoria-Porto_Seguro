@@ -30,6 +30,7 @@ export const titulosCampos = [
         titulo: 'Frente',
         img: ''
     }
-    'Lado Esquerdo', 
-    'Lado Direito', 
-    'Atrás'];
+    // 'Lado Esquerdo', 
+    // 'Lado Direito', 
+    // 'Atrás'
+];
