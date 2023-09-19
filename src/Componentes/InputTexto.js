@@ -1,27 +1,51 @@
-import Link from 'next/link';
-import { AiOutlineArrowRight } from 'react-icons/ai';
+'use client';
+import { useState } from 'react';
+import { RiSendPlaneFill } from 'react-icons/ri';
 
-export default function InputTexto({ desabled }) {
-    return (
-        <footer className="flex items-center h-16 w-full bg-[#f5f5f5] fixed bottom-0">
-            <div className="px-4 w-full max-w-2xl flex gap-4 mx-auto items-center justify-end">
-                <label htmlFor="avançar" className={`${desabled && 'hidden'}`}>
-                    Avançar para próxima etapa
-                </label>
-                <Link
-                    href={`${desabled ? '/chat-bot' : '/envio-fotos'}`}
-                    className={`bg-blue-600 p-2 rounded-lg ${
-                        desabled && 'bg-zinc-200'
-                    }`}
-                >
-                    <AiOutlineArrowRight
-                        id="avançar"
-                        className={`w-6 h-6 text-white ${
-                            desabled && 'text-zinc-400'
-                        }`}
-                    />
-                </Link>
-            </div>
-        </footer>
+import { mensagens } from '@/exports';
+
+function controlaMensagem(mensagem, setMensagem, setIdMensagem) {
+    if (Number(mensagem) < 5 && Number(mensagem) > 10) {
+        return;
+    }
+    mensagens.push(
+        {
+            mensagem: mensagem,
+            remetente: 'cliente',
+        },
+        {
+            mensagem:
+                'Muito bem, a coleta de dados foi concluida, avance para a próxima etapa.',
+            remetente: 'bot',
+        }
     );
+    setIdMensagem(ant => (ant += 3));
+    setMensagem('');
 }
+
+const InputTexto = ({ setIdMensagem }) => {
+    const [mensagem, setMensagem] = useState('');
+    return (
+        <div className="py-2 px-4 flex gap-4 items-center w-full">
+            <input
+                type="text"
+                placeholder="Digite aqui"
+                value={mensagem}
+                className="border-b-2 w-full bg-transparent border-zinc-400 outline-none"
+                onChange={e => {
+                    setMensagem(e.target.value);
+                }}
+            />
+            <button
+                type="button"
+                onClick={e =>
+                    controlaMensagem(mensagem, setMensagem, setIdMensagem)
+                }
+            >
+                <RiSendPlaneFill />
+            </button>
+        </div>
+    );
+};
+
+export default InputTexto;

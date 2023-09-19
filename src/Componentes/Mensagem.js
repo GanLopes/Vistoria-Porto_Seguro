@@ -11,7 +11,7 @@ export default function Mensagem({ mensagem, envio, respostas }) {
         >
             <div className="flex flex-col items-center">
                 <CaixaMensagem envio={envio} mensagem={mensagem} />
-                <div className="flex gap-4 justify-center flex-wrap w-full max-w-[250px] mx-auto">
+                <div className="flex gap-4 justify-center flex-wrap w-full max-w-[240px] mx-auto">
                     {respostas &&
                         respostas.map((resposta, index) => {
                             return(
