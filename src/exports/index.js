@@ -1,7 +1,7 @@
 export const mensagens = [
     {
-        mensagem: 'Vamos iniciar com algumas perguntas sobre a sua bicicleta',
-        respostas: ['Sim', 'Não'],
+        mensagem: 'Qual o modelo da sua bike?',
+        respostas: ['BMX', 'Dobrável', "Downhill", "Elétrica", "Fixa", "Outro"],
         remetente: 'bot',
     },
     {
@@ -9,8 +9,8 @@ export const mensagens = [
         remetente: 'cliente',
     },
     {
-        mensagem: 'Qual o Modelo da sua bike?',
-        respostas: ['BMX', 'Caloi'],
+        mensagem: 'Qual a marca da sua bike?',
+        respostas: ['BMC', 'Caloi', "Pinarello", "Cérvelo", "Specialized", "Trek", "Outro"],
         remetente: 'bot',
     },
     {
