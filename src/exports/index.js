@@ -5,7 +5,7 @@ export const mensagens = [
         remetente: 'bot',
     },
     {
-        mensagem: 'Sim',
+        mensagem: 'BMX',
         remetente: 'cliente',
     },
     {
@@ -14,7 +14,7 @@ export const mensagens = [
         remetente: 'bot',
     },
     {
-        mensagem: 'Sim',
+        mensagem: 'Caloi',
         remetente: 'cliente',
     },
     {
