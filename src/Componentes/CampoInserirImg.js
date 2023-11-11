@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { AiOutlineCamera } from "react-icons/ai";
-import { MdOutlineInsertPhoto } from "react-icons/md";
 
 export default function CampoInserirImg({ titulo, img }) {
     return (

@@ -1,8 +1,8 @@
-'use client';
-import { useState } from 'react';
-import { RiSendPlaneFill } from 'react-icons/ri';
+"use client";
+import { useState } from "react";
+import { RiSendPlaneFill } from "react-icons/ri";
 
-import { mensagens } from '@/utils/mensagens';
+import { mensagens } from "../utils/mensagens.json";
 
 function controlaMensagem(mensagem, setMensagem, setIdMensagem) {
     if (mensagem.length < 5 || mensagem.length > 10) {
@@ -12,20 +12,20 @@ function controlaMensagem(mensagem, setMensagem, setIdMensagem) {
     mensagens.push(
         {
             mensagem: mensagem,
-            remetente: 'cliente',
+            remetente: "cliente",
         },
         {
             mensagem:
-                'Muito bem, a coleta de dados foi concluida, avance para a próxima etapa.',
-            remetente: 'bot',
+                "Muito bem, a coleta de dados foi concluida, avance para a próxima etapa.",
+            remetente: "bot",
         }
     );
-    setIdMensagem(ant => (ant += 3));
-    setMensagem('');
+    setIdMensagem((ant) => (ant += 3));
+    setMensagem("");
 }
 
 const InputTexto = ({ setIdMensagem }) => {
-    const [mensagem, setMensagem] = useState('');
+    const [mensagem, setMensagem] = useState("");
     return (
         <div className="py-2 px-4 flex gap-4 items-center w-full">
             <input
@@ -33,13 +33,13 @@ const InputTexto = ({ setIdMensagem }) => {
                 placeholder="Digite aqui"
                 value={mensagem}
                 className="border-b-2 w-full bg-transparent border-zinc-400 outline-none"
-                onChange={e => {
+                onChange={(e) => {
                     setMensagem(e.target.value);
                 }}
             />
             <button
                 type="button"
-                onClick={e =>
+                onClick={(e) =>
                     controlaMensagem(mensagem, setMensagem, setIdMensagem)
                 }
             >

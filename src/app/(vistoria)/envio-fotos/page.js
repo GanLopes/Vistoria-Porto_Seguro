@@ -1,13 +1,10 @@
 "use client";
-
-import { useState } from "react";
 // components
-import CampoInserirImg from "@/componentes/CampoInserirImg";
-import ChatBotFooter from "@/componentes/ChatBotFooter";
+import CampoInserirImg from "../../../componentes/CampoInserirImg.js";
+import ChatBotFooter from "../../../componentes/ChatBotFooter.js";
 // utils
-import imagens from "@/utils/imagens"
+import imagens from "../../../utils/imagens.json";
 
-const titulosCampos = ["Frente", "Lado Direito", "Lado Esquerdo", "Atrás"];
 
 export default function EnvioFotos() {
     return (
@@ -27,10 +24,7 @@ export default function EnvioFotos() {
                     />
                 ))}
             </div>
-            <ChatBotFooter
-                href={"/vistoria-concluida"}
-                desabilitado={false}
-            />
+            <ChatBotFooter href={"/vistoria-concluida"} desabilitado={false} />
         </div>
     );
 }

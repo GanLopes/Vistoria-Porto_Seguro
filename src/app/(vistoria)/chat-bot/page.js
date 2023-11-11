@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 // componentes
-import ChatBotFooter from "../../../componentes/ChatBotFooter";
-import Mensagem from "../../../componentes/Mensagem";
+import ChatBotFooter from "../../../componentes/ChatBotFooter.js";
+import Mensagem from "../../../componentes/Mensagem.js";
 import mensagens from "../../../utils/mensagens.json";
 
 export default function chatBot() {
