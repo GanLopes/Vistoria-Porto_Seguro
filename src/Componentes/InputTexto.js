@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { RiSendPlaneFill } from 'react-icons/ri';
 
-import { mensagens } from '@/exports';
+import { mensagens } from '@/utils/mensagens';
 
 function controlaMensagem(mensagem, setMensagem, setIdMensagem) {
     if (mensagem.length < 5 || mensagem.length > 10) {

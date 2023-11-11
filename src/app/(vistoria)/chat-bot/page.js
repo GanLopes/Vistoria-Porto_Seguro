@@ -1,48 +1,20 @@
-'use client';
+"use client";
 
-import Footer from '/src/componentes/Footer';
-import Mensagem from '/src/componentes/Mensagem';
-import { mensagens } from '/src/exports';
-import { useEffect, useState } from 'react';
+import { useState } from "react";
+// componentes
+import ChatBotFooter from "@/componentes/ChatBotFooter";
+import Mensagem from "@/componentes/Mensagem";
+import mensagens from "@/utils/mensagens.json";
 
 export default function chatBot() {
-    const [jsonMensagens, setJsonMensagens] = useState(mensagens);
-    const [idMensagem, setIdMensagem] = useState(4);
-    const [desabilitado, setDesabilitado] = useState(true);
-    
-    useEffect(() => {
-        if(idMensagem >= jsonMensagens.length){
-            setDesabilitado(false)
-        }else{
-            setDesabilitado(true)
-        }
-    }, [jsonMensagens, idMensagem])
-    console.log(desabilitado, idMensagem, jsonMensagens.length)
-    return (
-        <>
-            <main className="mb-20 max-w-2xl mt-10 mx-auto">
-                {jsonMensagens.map((elemento, index) => {
-                    if (index > idMensagem) {
-                        return;
-                    }
+    const [isDesabled, setIsDesabled] = useState(false);
 
-                    return (
-                        <Mensagem
-                            key={index}
-                            idMensagem={setIdMensagem}
-                            mensagem={elemento.mensagem}
-                            envio={elemento.remetente}
-                            respostas={elemento.respostas}
-                        />
-                    );
-                })}
-            </main>
-            <Footer
-                setIdMensagem={setIdMensagem}
-                digitar={jsonMensagens[idMensagem]?.digitar ?? false}
-                href={['/chat-bot', '/envio-fotos']}
-                desabilitado={desabilitado}
-            />
-        </>
+    return (
+        <div className="max-w-sm flex flex-col md:max-w-2xl mx-auto space-y-5 pt-4">
+            {mensagens.map((m) => (
+                <Mensagem {...m} />
+            ))}
+            <ChatBotFooter href={"/envio-fotos"} desabilitado={isDesabled} />
+        </div>
     );
 }

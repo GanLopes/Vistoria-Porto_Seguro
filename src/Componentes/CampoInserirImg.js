@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import { AiOutlineCamera } from 'react-icons/ai';
-import { MdOutlineInsertPhoto } from 'react-icons/md';
+import Image from "next/image";
+import { AiOutlineCamera } from "react-icons/ai";
+import { MdOutlineInsertPhoto } from "react-icons/md";
 
 export default function CampoInserirImg({ titulo, img }) {
     return (
@@ -8,7 +8,7 @@ export default function CampoInserirImg({ titulo, img }) {
             className="flex p-4 bg-white flex-col w-72
              rounded-lg overflow-hidden border-2 hover:border-blue-600 border-zinc-200"
         >
-            <label className="text-blue-700 font-semibold">{titulo}</label>
+            <p className="text-blue-700 font-semibold">{titulo}</p>
             <div className="w-ful hover:text-white h-32 border-2 overflow-hidden rounded-lg grid place-items-center">
                 <Image
                     src={img}
