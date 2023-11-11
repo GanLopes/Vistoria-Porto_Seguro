@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 //componentes
-import Botao from "@/componentes/Botao";
+import Botao from "../componentes/Botao";
 import { useState } from "react";
 
 export default function Home() {

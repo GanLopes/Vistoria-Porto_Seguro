@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 // componentes
-import ChatBotFooter from "@/componentes/ChatBotFooter";
-import Mensagem from "@/componentes/Mensagem";
-import mensagens from "@/utils/mensagens.json";
+import ChatBotFooter from "../../../componentes/ChatBotFooter";
+import Mensagem from "../../../componentes/Mensagem";
+import mensagens from "../../../utils/mensagens.json";
 
 export default function chatBot() {
     const [isDesabled, setIsDesabled] = useState(false);
