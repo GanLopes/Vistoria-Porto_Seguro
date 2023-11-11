@@ -1,5 +1,5 @@
-import "@/app/globals.css";
-import Header from "@/componentes/Header";
+import "/src/app/globals.css";
+import Header from "/src/componentes/Header";
 import { Roboto } from "next/font/google";
 
 const fonte = Roboto({

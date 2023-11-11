@@ -1,9 +1,9 @@
 "use client";
 // components
-import CampoInserirImg from "../../../componentes/CampoInserirImg.js";
-import ChatBotFooter from "../../../componentes/ChatBotFooter.js";
+import CampoInserirImg from "/src/componentes/CampoInserirImg.js";
+import ChatBotFooter from "/src/componentes/ChatBotFooter.js";
 // utils
-import imagens from "../../../utils/imagens.json";
+import imagens from "/src/utils/imagens.json";
 
 
 export default function EnvioFotos() {

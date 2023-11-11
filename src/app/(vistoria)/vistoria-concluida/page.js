@@ -1,4 +1,4 @@
-import Botao from "../../../componentes/Botao.js";
+import Botao from "/src/componentes/Botao.js";
 
 export default function Home() {
     return (
