@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <html lang="pt-Br">
             <body className={`bg-[#f5f5f5] h-screen ${fonte.className}`}>
                 <Header />
-                <main className="w-full h-full mx-auto max-w-sm  md:max-w-4xl">
+                <main className="w-full h-screen mx-auto max-w-sm  md:max-w-4xl">
                     {children}
                 </main>
             </body>

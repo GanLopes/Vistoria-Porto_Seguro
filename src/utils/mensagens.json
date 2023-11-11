@@ -34,7 +34,10 @@
     },
     {
         "mensagem": "Qual o valor da bike? Digite no formato 00.000.",
-        "remetente": "bot",
-        "digitar": true
+        "remetente": "bot"
+    },
+    {
+        "mensagem": "40.000",
+        "remetente": "cliente"
     }
 ]
