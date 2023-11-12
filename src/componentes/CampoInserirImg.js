@@ -5,7 +5,7 @@ export default function CampoInserirImg({ titulo, img }) {
     return (
         <div
             className="flex p-4 bg-white flex-col w-72
-             rounded-lg overflow-hidden border-2 hover:border-blue-600 border-zinc-200"
+             rounded-lg overflow-hidden border-2 border-zinc-200"
         >
             <p className="text-blue-700 font-semibold">{titulo}</p>
             <div className="w-ful hover:text-white h-32 border-2 overflow-hidden rounded-lg grid place-items-center">
