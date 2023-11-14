@@ -32,6 +32,10 @@ export default function ChatBot() {
         };
 
         setMsg((prev) => [...prev, message]);
+        window.scrollTo({
+            top: document.documentElement.clientHeight,
+            behavior: "smooth",
+        });
     };
 
     const messageCenter = () => {
