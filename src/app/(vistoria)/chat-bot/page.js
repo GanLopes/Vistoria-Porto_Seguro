@@ -32,16 +32,16 @@ export default function ChatBot() {
         };
 
         setMsg((prev) => [...prev, message]);
-        window.scrollTo({
-            top: document.documentElement.clientHeight,
-            behavior: "smooth",
-        });
     };
 
     const messageCenter = () => {
         createMessage(content, "user");
         const watsonResponse = sendMessage(content, sessionId);
         createMessage(watsonResponse);
+        window.scrollTo({
+            top: document.documentElement.clientHeight,
+            behavior: "smooth",
+        });
     };
 
     useEffect(() => {
