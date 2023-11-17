@@ -17,3 +17,5 @@ Inicie o projeto usando o comando:\
 
 O projeto será iniciado em: `http://localhost:3000`, caso não tenha outros projetos\
 rodando na mesma porta.
+
+O link do projeto rodando na Vercel: `https://web-challenge-porto.vercel.app/`
